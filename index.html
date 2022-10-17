@@ -5,6 +5,18 @@
         <meta charset="UTF-8">
         <meta name="description" content="Convocation meeting minutes for 10/9/22">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <style>
+            header,
+            body,
+            footer {
+                padding: 0em 0.5em 0em 0.5em;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -24,15 +36,15 @@
                     </ol>
                 </nav>
             </section>
-            <details>
+            <details class="meeting-summary">
                 <summary><strong>Meeting Summary</strong></summary>
                 Research indicates a connection between the failure of creation magicks and aether current stagnation. Must look into the effects of Astral-aligned and Umbral-aligned elements on aether.
             </details>
         </header>
         <hr>
         <main>
-            <section>
-                <div id="attendance">
+            <section id="attendance">
+                <div>
                     <h3>Attendance</h3>
                 </div>
                 <ul>
@@ -45,16 +57,16 @@
                     <li>Loghrif</li>
                     <li>Fandaniel</li>
                 </ul>
-                <p><em>Absences:</em> Igeyorhm and Nabriales are missing. The other 4 absences are expected.</p>
+                <p><em style="display: none;">Absences:</em> Igeyorhm and Nabriales are missing. The other 4 absences are expected.</p>
             </section>
-            <section>
-                <div id="unfinished">
+            <section id="unfinished">
+                <div>
                     <h3>Unfinished Business from Last Meeting</h3>
                 </div>
                 <p>The chaos that had been occurring in <i>Pandæmonium</i> has finally subsided. The surviving keywards will work with the Convocation to determine what happened.</p>
             </section>
-            <section>
-                <div id="aether-stagnation">
+            <section id="aether-stagnation">
+                <div>
                     <h3>Aether Current Stagnation</h3>
                 </div>
                 <p><b>Fandaniel</b> presented his theory regarding the rampancy of creation magicks. He notes that areas in which this phenomenon occurs also have particularly weak aether currents.</p>
@@ -62,34 +74,36 @@
                 <p>He shows that places in which the magicks still work, such as <i>Akadaemia Anyder</i>, have a strong flow of aether. <b>Mitron</b> concurs, since his ichthyology research there has not been affected.</p>
                 <p><b>Pashtarot</b> offers to run the theory by the researchers at <i>Anamnesis Anyder</i>. <b>Deudalaphon</b> offers to come with.</p>
             </section>
-            <section>
-                <div id="elemental-effects">
+            <section id="elemental-effects">
+                <div>
                     <h3>Elemental Effects on Aether</h3>
                 </div>
                 <p>An elemental chart is brought out by <b>Altima</b>.</p>
-                <img src="picture.png" alt="Mysterious Picture" width="300"><br>
+                <div class="chart">
+                    <img src="picture.png" alt="Mysterious Picture">
+                </div>
                 <p><b>Loghrif</b> explains that the Astral-aligned elements of wind, lighting, and fire are associated with activity, while the Umbral-aligned elements of water, ice, and earth are associated with passivity.</p>
                 <p>An outside force causing the aether in an area to be pulled into an Umbral state would lead to stagnation, <b>Halmarut</b> surmises.</p>
                 <p><b>Emmerololth</b> will research the effects of Astral-aligned elements on stagnated aether along with <b>Fandaniel</b>.</p>
             </section>
-            <section>
-                <div id="miscellaneous">
+            <section id="miscellaneous">
+                <div>
                     <h3>Miscellaneous</h3>
                 </div>
                 <p>The restoration of <i>Ktisis Hyperboreia</i> has been completed. It is now up and running at full efficiency.</p>
                 <p>An aetheryte has been constructed at the <i>Macarenses Angle</i> at the request of numerous Amaroutines.</p>
             </section>
-            <section>
-                <div id="recording">
+            <section id="recording">
+                <div>
                     <h3>Meeting Recording</h3>
                 </div>
                 <strong>Audio Recording:</strong><br>
                 <audio controls src="audio.mp3">Audio not supported.</audio><br><br>
                 <strong>Video Recording:</strong><br>
-                <video controls src="video.mp4">Video not supported.</video><br>
+                <video controls src="video.mp4" style="min-width: 200px">Video not supported.</video><br>
             </section>
-            <section>
-                <div id="form">
+            <section id="form">
+                <div>
                     <h3>Form</h3>
                 </div>
                 <form>
@@ -139,7 +153,7 @@
         </main>
         <hr>
         <footer>
-            <span>Meeting minutes recorded by <b>Hythlodaeus</b>.</span>
+            <span style="display: block; text-align: center; height: 20pt">Meeting minutes recorded by <b>Hythlodaeus</b>.</span>
         </footer>
     </body>
 </html>

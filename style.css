@@ -1,0 +1,115 @@
+* {
+    /* default font */
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,
+h2 {
+    /* heading font */
+    font-family: 'Raleway', sans-serif;
+}
+
+h2 ~ h2 {
+    /* this will change the date heading */
+    color: dimgray;
+}
+
+header {
+    background-color: white;
+    top: 0;
+    position: sticky;
+    padding: 2px 0 20px 0;
+}
+
+h2 + section {
+    /* this will change the agenda */
+    background-color: beige;
+    margin: 0mm 0mm 5mm 0mm;
+    padding-top: 0.1ch;
+    padding-bottom: 0.1ch;
+    padding-left: 1ch;
+    padding-right: 1ch;
+}
+
+ol {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+ol li {
+    list-style: none;
+    display: inline-block;
+    width: 15%;
+    margin: 0em 0.3em 0em 0.3em;
+    text-align: center;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 5px;
+    column-gap: 30px;
+}
+
+a[href="#recording"] {
+    color: forestgreen;
+}
+
+@media screen and (min-width: 600px) {
+    .meeting-summary {
+        /* this technically doesn't make sense, but as an example */
+        /* the summary will be cut off if the screen width is between 600 and 700 px */
+        min-width: 700px;
+    }
+}
+
+.meeting-summary {
+    background-color: powderblue;
+    margin: auto;
+    padding: 0.5em 1.5rem 0.5em 1.5rem;
+    border-style: solid;
+    border-color: saddlebrown;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+div.chart {
+    margin-top: 15pt;
+    margin-bottom: 15pt;
+    margin-left: 25pt;
+    margin-right: 25pt;
+    width: 300px;
+}
+
+div.chart img {
+    max-width: 100%;
+    position: static;   /* functionally, this should do nothing */
+    left: 100px;
+}
+
+a:active {
+    /* change color when active (i.e. clicked) */
+    color: hsl(33, 100, 50);
+}
+
+section b {
+    color: #DC143C;
+}
+
+#form {
+    background-color: whitesmoke;
+    padding: 0.5em;
+}
+
+span > b:hover {
+    /* change color when hovered */
+    color: mediumpurple;
+    text-decoration: underline;
+}
+
+i {
+    color: rgb(100, 149, 237);
+}
